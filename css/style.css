@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+
+}
+
+.section-a {
+  background-color: #fff;
+  border: 1px solid red;
+  padding: 0 1%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side-header {
+  display: flex;
+  align-items: center;
+}
+
+.section-b {
+  background-color: #D7CFD0;
+}
+
+.section-c {
+  background-color: #000000;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
