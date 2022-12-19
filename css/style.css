@@ -55,10 +55,10 @@ nav {
   align-items: center;
 }
 
-.left-side-header img {
+/* .left-side-header img {
   max-width: 100px;
   width: 100%;
-}
+} */
 
 .left-side-header h1, .uni-website {
   font-family: 'Roboto Condensed', sans-serif;
