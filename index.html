@@ -6,33 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon-img.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <script defer src="js/app.js"></script>
   <title>StudentDB</title>
 </head>
 <body>
   <div class="main">
-    <div class="section-a">
-      <header>
+    <section class="section-a">
+      <nav>
         <div class="left-side-header">
           <img src="img/logo.svg" alt="Logo image">
           <div>
             <h1>Student File Database Portal</h1>
-            <a href="#">IBRAHIM BADAMASI BABANGIDA UNIVERSITY</a>
+            <a class="uni-website" href="#">IBRAHIM BADAMASI BABANGIDA UNIVERSITY</a>
           </div>
         </div>
         <div class="right-side-header">
-          <a href="#">Back To University Website</a>
+          <a class="back-to-uni-website" href="#"><img src="img/back-icon.png" alt="left Arrow"> Back To University Website</a>
         </div>
-      </header>
-    </div>
-    <div class="section-b">
-      <h1 id="h1"></h1>
-    </div>
-    <div class="section-c">
+      </nav>
+    </section>
+    <section class="section-b">
+      <div style="margin: 15px 5px">
+        <a class="back-to-uni-website" href="#"><img src="img/back-icon.png" alt="left Arrow"> Back To University Website</a>
+      </div>
+      <div class="section-b-body">
+        <div class="section-b-body-content">
+          <div class="section-b-body-inputes">
+            <form id="loginForm" class="login-form" action="/" method="get">
+              <div class="input-container">
+                <label for="">
+                  Student Matric Number<span style="color: red">*</span>
+                </label>
+                <input name="matricNo"  id="matricNo" type="text" placeholder="e.g U17/FNS/CSC/1044">
+              </div>
+              <div class="input-container">
+                <label for="">
+                  Password<span style="color: red">*</span>
+                </label>
+                <input name="password"  id="password" type="text" placeholder="*******">
+              </div>
+              <p id="error"></p>
+              <p class="password-reset">Forgotten password? Click <a href="#">Here</a> to reset</p>
+              <button class="login-btn" type="submit">Login</button>
+            </form>
+          </div>
+          <div class="section-b-body-background">
+            <img src="img/background-book.svg" alt="faded-book">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-c">
       <footer>
         <a href="#">Ibrahim Badamasi Babangida University</a> 
       </footer>
-    </div>
+    </section>
   </div>
 </body>
-<script src="js/app.js"></script>
 </html>
