@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --dark-green-color: rgb(7, 129, 19);
+  --light-green-color: #059213;
+  --whitish-milk-color: #f0f8f1;
+  --light-brown-color: #D7CFD0;
+  --white-color: #fff;
+  --light-black-color: #000000;
+  --dark-brown-color: #2b292a;
+  --red-color: red;
+  --light-pink: #F5E9E9;
+}
+
+.section-b-b {
+  background-color: var(--light-brown-color);
+  display: flex;
+  flex-direction: column;
+  height: 84.8vh;
+  padding: 0 1%;
+}
+
+.section-b-b-body {
+  background-color: var(--light-pink);
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding: 2%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-body-top {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid var(--light-black-color);
+  width: 270px;
+  margin: 10px 0;
+}
+
+.left-body-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.profile-pic img{
+  max-width: 100px;
+  width: 100%;
+}
+
+.profile-name, .matric-no {
+  font-size: 1.2rem;
+}
+
+.profile-name {
+  color: var(--light-green-color);
+}
+
+.matric-no {
+
+}
+
+.personal-document-ul, .academic-document-ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+li {
+  padding: 10px 0;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--light-black-color);
+  font-weight: 600;
+}
+
+li a:hover {
+  color: var(--light-green-color);
+}
+
+
+.right-body {
+  width: 50%;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.right-body P {
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .section-b-b-body {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .section-b-b {
+    height: 100%;
+  }
+
+  .left-body {
+    width: 100%;
+  }
+
+  .right-body {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
