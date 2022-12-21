@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages-style.css">
   <link rel="shortcut icon" href="../img/favicon-img.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +27,12 @@
         </div>
       </nav>
     </section>
-    <section class="section-b-b">
+    <section class="section-b-b sub-b">
       <div style="margin: 20px 5px; margin-bottom: 50px;">
         <a class="login-btn" href="../index.html">Logout</a>
       </div>
-      <div class="section-b-b-body">
-        <div class="left-body">
+      <div class="section-b-b-body sub-body">
+        <div class="left-body sub-left-body">
           <div class="left-body-top">
             <div class="profile-pic">
               <img src="../img/me.jpg" alt="">
@@ -49,41 +50,65 @@
                 <a href="indigen-letter.html">Indigene Letter</a>
               </li>
               <li>
-                <a href="#">Birth Certificate</a>
+                <a href="birth-cert.html">Birth Certificate</a>
               </li>
               <li>
-                <a href="#">Attestation Letter</a>
+                <a href="attestation.html">Attestation Letter</a>
               </li>
               <li>
-                <a href="#">Passport</a>
+                <a href="passport.html">Passport</a>
               </li>
             </ul>
             <h2>ACADEMIC DOCUMENTS</h2>
             <ul class="academic-document-ul">
               <li>
-                <a href="#">Jamb Admission Letter</a>
+                <a href="jamb-addm-letter.html">Jamb Admission Letter</a>
               </li>
               <li>
-                <a href="#">School Admission Letter</a>
+                <a href="school-adm-letter.html">School Admission Letter</a>
               </li>
               <li>
-                <a href="#">O’ Level Result/s</a>
+                <a href="olevel.html">O’ Level Result/s</a>
               </li>
               <li>
-                <a href="#">Course Registration Form</a>
+                <a class="active" href="course-form.html">Course Registration Form</a>
               </li>
             </ul>
             <h2>SEMESTER RESULT</h2>
           </div>
         </div>
-        <div class="right-body">
-          <p>Welcom Salihu,</p>
-          <p>IMPORTANT!!!</p>
-          <p>All students are to take note of the following before, during and
-             after the uploading of required documents. 
-             Upload each file according to namefield i.e indegene letter first. 
-             All files are to be uploaded properly to allow compilation of results
-             Kindly upload all required files for documentation. </p>
+        <div class="right-body-body">
+          <div class="sec-1">
+            <h1 class="document-title">ACADEMIC DOCUMENTS :Course Regidstration Form Upload</h1>
+          </div>
+          <div class="sec-2">
+            <div class="instruction">
+              <label for="">Instructions:</label>
+              <ul>
+                <li>Upload Jpeg format ONLY</li>
+                <li>Must be less than 30KB</li>
+                <li>Exactly 150px by 150px</li>
+                <li>Must be good quality</li>
+                <li>Must be plain white background</li>
+              </ul>
+            </div>
+            <div class="input-preview">
+              <div class="selecet-file">
+                <label id="label">
+                    <img src="../img/add-icon.png" alt="add icon">
+                    Upload File
+                  <input type="file" accept="image/jpeg"  onchange="loadFile(event)">
+                </label>
+              </div>
+              <div class="preview-file">
+                <label id="preview">Preview File</label>
+                <img id="output">
+              </div>
+            </div>
+          </div>
+          <div class="sec-3">
+            <a class="next-btn" href="course-form.html">Submit</a>
+          </div>
         </div>
       </div>
     </section>
@@ -93,5 +118,7 @@
       </footer>
     </section>
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
