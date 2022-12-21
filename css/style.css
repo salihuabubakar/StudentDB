@@ -146,13 +146,13 @@ nav {
 }
 
 .login-btn {
+  text-decoration: none;
   background-color: var(--light-green-color);
   color: var(--white-color);
-  padding: 2.5%;
+  padding: 10px 30px;
   border-radius: 10px;
   outline: none;
   border: none;
-  width: 25%;
   font-weight: 700;
   margin-top: 3%;
   font-family: 'Roboto Condensed', sans-serif;

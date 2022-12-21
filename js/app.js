@@ -12,6 +12,7 @@ let loginForm = document.getElementById("loginForm").addEventListener("submit", 
     errorMsg.innerHTML = "Password must be atleast 6 characters long";
   }else {
     errorMsg.innerHTML = "processing...";
+    window.location.replace("pages/dashboard.html")
     console.log("successfully logged in");
   }
 })
