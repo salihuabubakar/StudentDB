@@ -31,17 +31,17 @@
     <section class="section-b">
       <div style="margin: 15px 5px">
         <a class="back-to-uni-website" href="#"><img src="img/back-icon.png" alt="left Arrow"> Back To University Website</a>
-        <button id="addminLoginPageBtn">Admin</button>
       </div>
       <div class="section-b-body">
         <div class="section-b-body-content">
           <div class="section-b-body-inputes">
-            <form id="loginForm" class="login-form" action="/" method="get">
+            <form id="adminLoginForm" class="login-form" action="/" method="get">
+              <p id="admLogin">Admin Login</p>
               <div class="input-container">
                 <label for="">
-                  Student Matric Number<span style="color: red">*</span>
+                  Admin Id<span style="color: red">*</span>
                 </label>
-                <input name="matricNo"  id="matricNo" type="text" placeholder="e.g U17/FNS/CSC/1044">
+                <input name="adminId"  id="adminId" type="password" placeholder="*******">
               </div>
               <div class="input-container">
                 <label for="">
@@ -66,5 +66,6 @@
       </footer>
     </section>
   </div>
+  <script src="pages/index.js"></script>
 </body>
 </html>

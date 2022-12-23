@@ -22,6 +22,15 @@ body {
 
 /* Login */
 
+#admLogin {
+  color: var(--light-green-color);
+  font-size: 1.6rem;
+}
+
+#addminLoginPageBtn {
+  opacity: 0;
+}
+
 .main {
 
 }

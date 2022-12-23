@@ -2,7 +2,7 @@
 let matricNo = document.getElementById("matricNo");
 let password = document.getElementById("password");
 let errorMsg = document.getElementById("error");
-let loginForm = document.getElementById("loginForm").addEventListener("submit", (event) => {
+const loginForm = document.getElementById("loginForm").addEventListener("submit", (event) => {
   event.preventDefault();
   if(matricNo.value === "") {
     errorMsg.innerHTML = "Matric Number is required";
@@ -15,4 +15,8 @@ let loginForm = document.getElementById("loginForm").addEventListener("submit", 
     window.location.replace("pages/dashboard.html")
     console.log("successfully logged in");
   }
+})
+
+const addminLoginPageBtn = document.getElementById("addminLoginPageBtn").addEventListener("dblclick", () => {
+  window.location.href="admin-login.html";
 })

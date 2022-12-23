@@ -33,6 +33,7 @@
   padding: 2%;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .left-body {
@@ -93,6 +94,11 @@ li {
   padding: 10px 0;
 }
 
+.admin-ul li a {
+  color: var(--light-green-color);
+  text-decoration: none;
+}
+
 li a {
   text-decoration: none;
   color: var(--light-black-color);
@@ -101,6 +107,10 @@ li a {
 
 li a:hover {
   color: var(--light-green-color);
+}
+
+.admin-ul li a:hover {
+  color: var(--light-black-color);
 }
 
 .right-body {
@@ -114,6 +124,33 @@ li a:hover {
   font-weight: 600;
   margin: 10px 0;
   line-height: 1.4rem;
+}
+
+.sub-right-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.file-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-view .file-display {
+  display: flex;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.accept-reject-btn {
+  display: flex;
+}
+
+.sub-left-body {
+  position: relative;
+  bottom: 100px;
 }
 
 @media screen and (max-width: 720px) {
@@ -130,8 +167,46 @@ li a:hover {
     width: 100%;
   }
 
+  .sub-section-b-b {
+    height: 85.8vh;
+  }
+
+  .sub-left-body {
+    bottom: 0;
+  }
+
   .right-body {
     margin-bottom: 10px;
     width: 100%;
   }
+}
+
+.active {
+  color: var(--light-black-color);
+}
+
+.admin-ul li .admin-active {
+  color: var(--light-black-color);
+}
+
+.admin-ul li p {
+  color: var(--light-green-color);
+  font-weight: 600;
+}
+
+.admin-ul li .matric-active {
+  color: var(--light-black-color);
+}
+
+.student-link p a, .student-link-reject p a {
+  text-decoration: none;
+  color: var(--light-green-color);
+}
+
+.student-link p a:hover, .student-link-reject p a:hover {
+  color: var(--light-black-color);
+}
+
+.student-link-reject {
+  
 }
