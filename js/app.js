@@ -17,6 +17,7 @@ const loginForm = document.getElementById("loginForm").addEventListener("submit"
   }
 })
 
-const addminLoginPageBtn = document.getElementById("addminLoginPageBtn").addEventListener("dblclick", () => {
-  window.location.href="admin-login.html";
-})
+// Redirect to admin login page
+// const addminLoginPageBtn = document.getElementById("addminLoginPageBtn").addEventListener("dblclick", () => {
+//   window.location.href="admin-login.html";
+// })

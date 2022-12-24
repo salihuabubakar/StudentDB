@@ -71,9 +71,13 @@ const loginForm = document.getElementById("adminLoginForm").addEventListener("su
     errorMsg.innerHTML = "Admin Id is required";
   } else if (password.value === "") {
     errorMsg.innerHTML = "Password is required";
+  } else if(password.value.length < 6) {
+    errorMsg.innerHTML = "Password must be atleast 6 characters long";
   } else {
     errorMsg.innerHTML = "processing...";
     window.location.replace("pages/admin-dashboard.html");
     console.log("successfully logged in");
   }
 });
+
+console.log("Hello world");
