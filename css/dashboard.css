@@ -178,6 +178,8 @@ li a:hover {
 .sub-left-body {
   position: relative;
   bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -251,6 +253,52 @@ li a:hover {
   margin: 5px 0;
 } 
 
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: var(--light-black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal textarea {
+  background-color: var(--white-color);
+  color: var(--light-black-color);
+}
+
+.modal-container .reject-btn {
+  width: 50%;
+  position: relative;
+  left: 230px;
+  background-color: var(--dark-red-color);
+}
+
+.modal-container .reject-btn:hover {
+  background-color: #531c0b;
+}
+
 .red-notice {
   background-color: rgb(207, 207, 84);
 }
@@ -297,6 +345,7 @@ li a:hover {
 
   .left-body {
     width: 100%;
+
   }
 
   .sub-section-b-b {
@@ -309,10 +358,25 @@ li a:hover {
 
   .sub-left-body {
     bottom: 0;
+    width: 100%;
   }
 
   .right-body, .sub-sub-right-body {
     margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .modal-container .reject-btn {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+
+  .modal {
+    max-width: 450px;
+    width: 100%;
+  } 
+
+  .accept-reject-btn button {
     width: 100%;
   }
 }

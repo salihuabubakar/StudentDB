@@ -10,10 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-  <script defer src="../js/app.js"></script>
   <title>Dashboard</title>
 </head>
-<body>
+<body id="body">
   <div class="main">
     <section class="section-a">
       <nav>
@@ -31,7 +30,7 @@
         <a class="login-btn" href="../admin-login.html">Logout</a>
       </div>
       <div class="section-b-b-body sub-section-b-b-body">
-        <div class="left-body sub-left-body same-width">
+        <div class="sub-left-body same-width">
           <div class="left-body-top">
             <div class="profile-pic">
               <img src="../img/smile.png" alt="">
@@ -114,11 +113,18 @@
           </div>
           <div class="accept-reject-btn">
             <div>
-              <a class="login-btn" href="#">Verify</a>
+              <button class="login-btn">Verify</button>
             </div>
             <div>
-              <a class="login-btn reject-btn" href="#">View Comment</a>
+              <button class="login-btn reject-btn" id="open">View Comment</button>
             </div>
+          </div>
+          <div class="modal-container" id="modalContainer">
+            <form class="modal" action="" method="get">
+              <p>Reasons for rejection<span style="color: red;">*</span></p>
+              <textarea style="border: none; outline: none; padding: 10px;" name="text-area" id="modal" class="modal" cols="55" rows="5" placeholder="Add comment here"></textarea>
+              <button class="login-btn reject-btn" id="close" type="submit">Edit & Commentt</button>
+            </form>
           </div>
         </div>
       </div>
@@ -129,5 +135,7 @@
       </footer>
     </section>
   </div>
+
+  <script src="../js/app.js"></script>
 </body>
 </html>
