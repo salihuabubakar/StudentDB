@@ -183,3 +183,8 @@ input[type = file] {
   padding: 15% 0;
 }
 }
+
+.logout-back-to-dashboard-div {
+  display: flex;
+  justify-content: space-between;
+}
