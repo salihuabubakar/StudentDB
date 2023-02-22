@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages-style.css">
   <link rel="shortcut icon" href="../img/favicon-img.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,9 @@
       </nav>
     </section>
     <section class="section-b-b sub-section-b-b mobile-height">
-      <div style="margin: 20px 5px; margin-bottom: 50px;">
-        <a class="login-btn" href="../admin-login.html">Logout</a>
+      <div class="logout-back-to-dashboard-div" style="margin: 20px 5px; margin-bottom: 50px;">
+        <div><a class="login-btn" href="../index.html">Logout</a></div>
+        <div><a class="login-btn" href="admin-dashboard.html">Back to dashboard</a></div>
       </div>
       <div class="section-b-b-body sub-section-b-b-body">
         <div class="sub-left-body same-width">
@@ -61,6 +63,7 @@
           </div>
         </div>
         <div class="file-view">
+          <a style="color: green; text-decoration: none;" href="admin-dashboard.html">&lt;&lt;Go-back</a>
           <div class="file-display">
             <div class="student-link sideber-link">
               <div class="verify-image">
@@ -121,6 +124,7 @@
           </div>
           <div class="modal-container" id="modalContainer">
             <form class="modal" action="" method="get">
+              <span style="color: red; cursor: pointer;" id="close"><img src="../img/close.png" alt=""></span>
               <p>Reasons for rejection<span style="color: red;">*</span></p>
               <textarea style="border: none; outline: none; padding: 10px;" name="text-area" id="modal" class="modal" cols="55" rows="5" placeholder="Add comment here"></textarea>
               <button class="login-btn reject-btn" id="close" type="submit">Comment & Reject</button>
