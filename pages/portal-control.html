@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/dashboard.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages-style.css">
   <link rel="shortcut icon" href="../img/favicon-img.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,9 @@
       </nav>
     </section>
     <section class="section-b-b sub-section-b-b">
-      <div style="margin: 20px 5px; margin-bottom: 50px;">
-        <a class="login-btn" href="../admin-login.html">Logout</a>
+      <div class="logout-back-to-dashboard-div" style="margin: 20px 5px; margin-bottom: 50px;">
+        <div><a class="login-btn" href="../index.html">Logout</a></div>
+        <div><a class="login-btn" href="admin-dashboard.html">Back to dashboard</a></div>
       </div>
       <div class="section-b-b-body">
         <div class="sub-left-body">
@@ -43,10 +45,10 @@
           <div class="left-body-bottom">
             <ul class="personal-document-ul admin-ul">
               <li>
-                <a class="active admin-active" href="admin-dashboard.html">New student upload</a>
+                <a href="admin-dashboard.html">New student upload</a>
               </li>
               <li>
-                <a href="rejected-file.html">Rejected Student Uploads</a>
+                <a href="">Rejected Student Uploads</a>
               </li>
               <li>
                 <a href="documented-student-file.html">Documented Student Files</a>
@@ -55,20 +57,20 @@
                 <a href="result-portal.html">Result Portal</a>
               </li>
               <li>
-                <a href="portal-control.html">Portal Control Access</a>
+                <a class="active admin-active" href="portal-control.html">Portal Control Access</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="right-body sub-right-body awaiting-div">
-          <div><p>Awaiting Verification(100)</p></div>
-          <div class="flex-wrap">
-            <p><a href="submitted-file.html">U17/FNS/CSC/1011</a></p>
-            <p><a href="submitted-file.html">U19/FNS/CSC/1034</a></p>
-            <p><a href="submitted-file.html">U21/FNS/CSC/1053</a></p>
-            <p><a href="submitted-file.html">U17/FNS/CSC/1011</a></p>
-            <p><a href="submitted-file.html">U19/FNS/CSC/1034</a></p>
-            <p><a href="submitted-file.html">U21/FNS/CSC/1053</a></p>
+          <div><p style="color: red;">Open or Close student uploading portal</p></div>
+          <div style="display: flex; align-items: center;">
+            <span style="font-weight: 900;">OFF</span>
+            <label style="margin: 0 5px;" class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <span style="font-weight: 900;">ON</span>
           </div>
         </div>
       </div>
